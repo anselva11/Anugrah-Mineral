@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-charcoal: #11161A;
+  --color-brand-charcoal-light: #1C2227;
+  --color-brand-gold: #F5A623;
+  --color-brand-gold-dark: #D98B16;
+  --color-brand-bg: #F5F5F3;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html, body {
+    @apply bg-[#F5F5F3] text-brand-charcoal font-sans antialiased;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
