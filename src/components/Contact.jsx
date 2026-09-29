@@ -73,7 +73,7 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-xs font-bold text-brand-charcoal uppercase tracking-widest mb-2">Full Name</label>
-                  <input type="text" className="w-full bg-white border border-gray-200 p-3 outline-none focus:border-brand-gold transition-colors rounded-sm" placeholder="John Doe" required />
+                  <input type="text" className="w-full bg-white border border-gray-200 p-3 outline-none focus:border-brand-gold transition-colors rounded-sm" placeholder="Ansel Varian" required />
                 </div>
                 <div>
                   <label className="block text-xs font-bold text-brand-charcoal uppercase tracking-widest mb-2">Company</label>
@@ -84,7 +84,7 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-xs font-bold text-brand-charcoal uppercase tracking-widest mb-2">Email</label>
-                  <input type="email" className="w-full bg-white border border-gray-200 p-3 outline-none focus:border-brand-gold transition-colors rounded-sm" placeholder="john@example.com" required />
+                  <input type="email" className="w-full bg-white border border-gray-200 p-3 outline-none focus:border-brand-gold transition-colors rounded-sm" placeholder="ansel@example.com" required />
                 </div>
                 <div>
                   <label className="block text-xs font-bold text-brand-charcoal uppercase tracking-widest mb-2">Phone</label>
