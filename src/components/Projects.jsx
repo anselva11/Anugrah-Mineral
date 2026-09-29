@@ -74,10 +74,8 @@ export default function Projects() {
             ))}
           </AnimatePresence>
         </motion.div>
-        
-        <div className="mt-12 text-center text-sm text-gray-500 italic">
-          Note: Some project names are placeholders pending final evaluation and public disclosure.
-        </div>
+
+
       </div>
     </section>
   );
