@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -76,20 +75,6 @@ export default function Hero() {
         </div>
       </div>
 
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
-      >
-        <span className="text-white/60 text-xs tracking-widest uppercase">Scroll</span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <ChevronDown className="text-white/60" size={20} />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }
