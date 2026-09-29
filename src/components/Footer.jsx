@@ -19,7 +19,7 @@ export default function Footer() {
           
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <img src="/src/assets/logo 1.png" alt="PT Anugrah Mining Resources Logo" className="h-10 w-auto" />
+              <img src="/assets/logo1.png" alt="PT Anugrah Mining Resources Logo" className="h-10 w-auto" />
               <div className="flex flex-col text-white">
                 <span className="font-bold text-base leading-tight tracking-tight">PT ANUGRAH</span>
                 <span className="text-[9px] font-semibold tracking-[0.2em] uppercase text-white/70">Mining Resources</span>

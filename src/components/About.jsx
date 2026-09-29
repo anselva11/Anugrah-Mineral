@@ -63,7 +63,7 @@ export default function About() {
               className="relative h-[600px] w-full"
             >
               <img 
-                src="/src/assets/mining operation.jpg" 
+                src="/assets/mining-operation.jpg" 
                 alt="Mining operation site" 
                 className="w-full h-full object-cover rounded-sm"
               />

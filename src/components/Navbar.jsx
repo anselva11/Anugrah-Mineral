@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-3 z-50 relative">
-          <img src="/src/assets/logo 1.png" alt="PT Anugrah Mining Resources Logo" className="h-12 w-auto" />
+          <img src="/assets/logo1.png" alt="PT Anugrah Mining Resources Logo" className="h-12 w-auto" />
           <div className={`flex flex-col ${isScrolled ? 'text-brand-charcoal' : 'text-white'}`}>
             <span className="font-bold text-lg leading-tight tracking-tight">PT ANUGRAH</span>
             <span className="text-[10px] font-semibold tracking-[0.2em] uppercase">Mining Resources</span>

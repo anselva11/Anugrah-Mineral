@@ -13,7 +13,7 @@ export default function Hero() {
       >
         <div className="absolute inset-0 bg-brand-charcoal/70 z-10"></div>
         <img 
-          src="/src/assets/back2.png" 
+          src="/assets/back2.png" 
           alt="Mining operation background" 
           className="w-full h-full object-cover"
         />

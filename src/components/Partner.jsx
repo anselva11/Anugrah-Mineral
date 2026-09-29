@@ -52,7 +52,7 @@ export default function Partner() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-brand-charcoal/80 z-10"></div>
           <img 
-            src="/src/assets/back2.png" 
+            src="/assets/back2.png" 
             alt="Partnership background" 
             className="w-full h-full object-cover"
           />
@@ -118,7 +118,7 @@ export default function Partner() {
               className="relative h-[500px]"
             >
               <img 
-                src="/src/assets/mining operation.jpg" 
+                src="/assets/mining-operation.jpg" 
                 alt="Partnership operations" 
                 className="w-full h-full object-cover rounded-sm"
               />
