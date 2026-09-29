@@ -6,7 +6,7 @@ export default function CTA() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-brand-charcoal/80 z-10"></div>
         <img 
-          src="https://images.unsplash.com/photo-1578357068289-49764506cbe1?q=80&w=2000&auto=format&fit=crop" 
+          src="/assets/mining2.jpg" 
           alt="Mining background" 
           className="w-full h-full object-cover"
         />

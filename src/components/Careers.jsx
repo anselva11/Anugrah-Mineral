@@ -1,32 +1,10 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Briefcase, MapPin, ArrowRight } from 'lucide-react';
 import SectionTitle from './SectionTitle';
+import { jobsData } from '../data/jobs';
 
 export default function Careers() {
-  const jobs = [
-    {
-      id: 1,
-      title: 'Senior Mining Engineer',
-      department: 'Operations',
-      location: 'Samarinda, East Kalimantan',
-      type: 'Full-time'
-    },
-    {
-      id: 2,
-      title: 'Geologist',
-      department: 'Exploration',
-      location: 'Site-based',
-      type: 'Full-time'
-    },
-    {
-      id: 3,
-      title: 'Commercial Analyst',
-      department: 'Commercial & Trading',
-      location: 'Jakarta Head Office',
-      type: 'Full-time'
-    }
-  ];
-
   return (
     <div className="bg-brand-bg min-h-screen">
       <section className="pt-40 pb-20 bg-brand-charcoal relative overflow-hidden">
@@ -55,27 +33,28 @@ export default function Careers() {
           <SectionTitle title="OPEN POSITIONS" subtitle="JOIN OUR TEAM" centered />
           
           <div className="mt-16 max-w-4xl mx-auto flex flex-col gap-6">
-            {jobs.map((job, index) => (
-              <motion.div
-                key={job.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white border border-gray-200 p-8 rounded-sm hover:border-brand-gold hover:shadow-lg transition-all duration-300 group cursor-pointer flex flex-col md:flex-row md:items-center justify-between"
-              >
-                <div>
-                  <h3 className="text-xl font-bold text-brand-charcoal mb-3 group-hover:text-brand-gold transition-colors">{job.title}</h3>
-                  <div className="flex flex-wrap gap-4 text-sm text-gray-500 font-medium">
-                    <span className="flex items-center"><Briefcase size={16} className="mr-1 text-brand-gold" /> {job.department}</span>
-                    <span className="flex items-center"><MapPin size={16} className="mr-1 text-brand-gold" /> {job.location}</span>
-                    <span className="bg-brand-bg px-3 py-1 text-xs font-bold text-brand-charcoal uppercase tracking-wider rounded-sm">{job.type}</span>
+            {jobsData.map((job, index) => (
+              <Link key={job.id} to={`/careers/${job.slug}`}>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-white border border-gray-200 p-8 rounded-sm hover:border-brand-gold hover:shadow-lg transition-all duration-300 group cursor-pointer flex flex-col md:flex-row md:items-center justify-between"
+                >
+                  <div>
+                    <h3 className="text-xl font-bold text-brand-charcoal mb-3 group-hover:text-brand-gold transition-colors">{job.title}</h3>
+                    <div className="flex flex-wrap gap-4 text-sm text-gray-500 font-medium">
+                      <span className="flex items-center"><Briefcase size={16} className="mr-1 text-brand-gold" /> {job.department}</span>
+                      <span className="flex items-center"><MapPin size={16} className="mr-1 text-brand-gold" /> {job.location}</span>
+                      <span className="bg-brand-bg px-3 py-1 text-xs font-bold text-brand-charcoal uppercase tracking-wider rounded-sm">{job.type}</span>
+                    </div>
                   </div>
-                </div>
-                <div className="mt-6 md:mt-0 flex items-center text-sm font-bold text-brand-charcoal uppercase tracking-widest group-hover:text-brand-gold transition-colors">
-                  Apply Now <ArrowRight size={16} className="ml-2 transform group-hover:translate-x-2 transition-transform" />
-                </div>
-              </motion.div>
+                  <div className="mt-6 md:mt-0 flex items-center text-sm font-bold text-brand-charcoal uppercase tracking-widest group-hover:text-brand-gold transition-colors">
+                    View Details <ArrowRight size={16} className="ml-2 transform group-hover:translate-x-2 transition-transform" />
+                  </div>
+                </motion.div>
+              </Link>
             ))}
           </div>
 

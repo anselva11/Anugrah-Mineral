@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Careers from './components/Careers';
+import JobDetail from './components/JobDetail';
 import Partner from './components/Partner';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/careers/:slug" element={<JobDetail />} />
           <Route path="/partner" element={<Partner />} />
         </Routes>
         <Footer />
